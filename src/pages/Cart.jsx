@@ -26,7 +26,7 @@ const Cart = () => {
     <div>
       {
         cart.length>0 ? (
-        <div className="flex w-[1080px] mx-auto gap-x-8 mt-10 pb-5">
+        <div className="flex w-[1080px] mx-auto gap-x-8 mt-10 pb-5 pt-20">
         <div className="flex flex-col gap-y-5 max-w-[60%]">
           {
             cart.map((item,index)=> (
@@ -51,10 +51,10 @@ const Cart = () => {
         </div>
         </div>) : 
 
-        (<div className='h-[80vh] textCol w-full  flex flex-col justify-center items-center  text-4xl italic font-bold gap-y-5'>
-          <h1 className="flex gap-x-3">Cart is Empty <BsEmojiFrown color="green"></BsEmojiFrown></h1>
+        (<div className='min-h-[100vh] textCol w-full  flex flex-col justify-center items-center  text-4xl italic font-bold gap-y-5 bgCool'>
+          <h1 className="flex gap-x-3 Font text-sky-400">Cart is Empty <BsEmojiFrown color="yellow"></BsEmojiFrown></h1>
           <NavLink to="/buy">
-          <button className=' text-[beige] flex items-center text-2xl py-2 px-2 rounded-lg bg-black hover:text-blue-400'>Shop From Us</button>
+          <button className=' text-[beige] Font uppercase flex items-center text-2xl py-2 px-2 rounded-lg bg-black hover:text-blue-400 italic'>Shop From Us</button>
           </NavLink>
          </div>)
       }

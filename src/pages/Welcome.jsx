@@ -15,7 +15,7 @@ const Welcome = () => {
    <div className="w-[100vw] min-h-[100vh] bgCool">
     <div className= ' max-w-[1080px] mx-auto h-full textCol flex flex-col pt-44 space-y-20'>
        <div className='flex flex-col gap-y-5'>
-        <h1 className='text-5xl italic font-bold Font text-white uppercase'>Welcome Shopper's</h1>
+        <h1 className='text-7xl italic font-bold Font text-white uppercase'>Welcome Shopper's</h1>
         <p className='italic font-semibold Font text-lg text-lime-300'>The ultimate Destination For What you've been searching for !!</p>
         </div>
         <div className='w-[150px] h-[150px]  slideset2'>

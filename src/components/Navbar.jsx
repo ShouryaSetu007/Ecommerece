@@ -1,6 +1,5 @@
 import {FaShoppingCart} from "react-icons/fa"
 import { NavLink } from "react-router-dom";
-import { FaMeetup } from "react-icons/fa";
 import { IoIosHome } from "react-icons/io";
 
 import { IconContext } from "react-icons";

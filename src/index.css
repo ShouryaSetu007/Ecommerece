@@ -80,6 +80,8 @@ body {
   .slideset2 > *:nth-child(6) {animation-delay: 10s} /* Adjusted delay for 6th slide */
 
 
+
+  /* navbar button animations */
   .carti::after{
     content: "";
     width: 8rem;
@@ -93,11 +95,15 @@ body {
     border-radius:50%;
     transition: all ease 0.3s;
   }
-
-
   .carti:hover::after{
     top: 0;
     border-radius: 5px;
+  }
+
+
+  .loginGrad{
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
   }
   
 

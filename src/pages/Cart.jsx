@@ -3,11 +3,13 @@ import { NavLink } from "react-router-dom";
 import CartItem from "../components/CartItem";
 import { useEffect, useState } from "react";
 import { BsEmojiFrown } from "react-icons/bs";
+import Navbar from "../components/Navbar";
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Cart = () => {
-
+  const navigate=useNavigate();
   const {cart}=useSelector((state)=>state);
   // cart is an array of objects=> [{},{},{},{}.....]
 
@@ -23,6 +25,8 @@ const Cart = () => {
 
 
   return(
+    <>
+    <Navbar></Navbar>
     <div>
       {
         cart.length>0 ? (
@@ -46,7 +50,7 @@ const Cart = () => {
 
           <div className="flex flex-col gap-y-4">
             <p className="text-[14px] text-black font-semibold">Total Amount: ${totalAmount}</p>
-            <button className="text-white font-bold text-lg bg-green-700 px-2 py-1 rounded-sm">CheckOut Now</button>
+            <button onClick={()=>{navigate("/login")}} className="text-white font-bold text-lg bg-green-700 px-2 py-1 rounded-sm">CheckOut Now</button>
           </div>
         </div>
         </div>) : 
@@ -59,6 +63,7 @@ const Cart = () => {
          </div>)
       }
     </div>
+    </>
   );
 };
 

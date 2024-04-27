@@ -21,7 +21,7 @@ const Product = (props) => {
 
 
   return(
-    <div className=" flex flex-col items-center justify-between hover:scale-110 transition duration-300 ease-in hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] gap-3 p-4 mt-10 ml-5 rounded-xl outline outline-gray-200">
+    <div className=" flex flex-col items-center justify-between hover:scale-110 transition duration-300 ease-in hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] gap-3 p-4 mt-10 ml-5 rounded-xl outline outline-gray-200 bg-white">
       <h1 className="text-gray-700 font-semibold text-lg w-40 mt-1 truncate">{post.title.length<15 ? post.title : post.title.substring(0,15)+"..."}</h1>
       <p className="w-40 text-gray-400 font-normal text-[10px] text-left">{post.description.split(" ").slice(0,10).join(" ")+"..."}</p>
       <div className="h-[180px]">

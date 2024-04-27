@@ -7,11 +7,13 @@ import { GiSunglasses } from "react-icons/gi";
 import { GiRunningShoe } from "react-icons/gi";
 import { PiWatchFill } from "react-icons/pi";
 import { LiaRingSolid } from "react-icons/lia";
+import Navbar from '../components/Navbar';
 
 const Welcome = () => {
     const navigate=useNavigate();
   return (
-
+    <>
+    <Navbar></Navbar>
    <div className="w-[100vw] min-h-[100vh] bgCool">
     <div className= ' max-w-[1080px] mx-auto h-full textCol flex flex-col pt-44 space-y-20'>
        <div className='flex flex-col gap-y-5'>
@@ -31,6 +33,7 @@ const Welcome = () => {
         </div>
     </div>
     </div> 
+    </>
   )
 }
 
